@@ -1,84 +1,81 @@
 <app-header></app-header>
-<a href="admin/add"
-  ><button class="bg-yellow-500 mt-5 ml-2 rounded-lg font-bold h-5 w-40">
-    Add products
-  </button></a
->
-<a href="admin/categories"
-  ><button class="bg-yellow-500 mt-5 ml-2 rounded-lg font-bold h-5 w-40">
-    Add categories
-  </button></a
->
-<div class="grid grid-cols-3 gap-6 my-6">
-  <div class="student relative">
-    <table class="">
+
+<input type="search" [(ngModel)]="searchText" placeholder="Tìm kiếm...." />
+<div class="ml-52">
+  <h1 class="font-bold text-4xl"> Danh sách sản phẩm</h1>
+  <div class="dm">
+  <div class="student relative flex float-left pr-20">
+    <table class="bg-orange-50 table-auto border w-full my-2 text-center  ">
       <thead>
         <tr>
-          <th class="border-2 border-blue-500">ID</th>
-          <th class="border-2 border-blue-500">Title</th>
-          <th class="border-2 border-blue-500">Price</th>
-          <th class="border-2 border-blue-500">Description</th>
-          <th class="border-2 border-blue-500">Category</th>
-          <th class="border-2 border-blue-500">Action</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">ID</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">Title</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">Price</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">Description</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">Category</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">Action</th>
         </tr>
       </thead>
 
-      @for (student of productData; track student) {
+      @for (student of productData | filter: searchText; track student) {
       <tbody>
         <tr>
-          <td class="border-2 border-blue-500">{{ student.id }}</td>
-          <td class="border-2 border-blue-500">{{ student.title }}</td>
-          <td class="border-2 border-blue-500">{{ student.price }}</td>
-          <td class="border-2 border-blue-500">{{ student.description }}</td>
-          <td class="border-2 border-blue-500">{{ student.category }}</td>
-          <th class="border-2 border-blue-500 flex">
+          <td class=" p-5 border-2 border-red-100 text-xl ... ">{{ student.id }}</td>
+          <td class=" p-5 border-2 border-red-100 text-xl ... ">{{ student.title }}</td>
+          <td class=" p-5 border-2 border-red-100 text-xl ... ">{{ student.price }}</td>
+          <td class=" p-5 border-2 border-red-100 text-xl ... ">{{ student.description }}</td>
+          <td class=" p-5 border-2 border-red-100 text-xl ... ">{{ student.category }}</td>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">
             <a href="admin/edit/{{ student.id }}">
               <button
-                class="bg-blue-600 w-20 mb-2 mt-1 rounded-[6px] text-white font-medium"
+                class="button"
               >
-                Edit
+                Sửa
               </button>
             </a>
             <button
-              class="bg-red-500 w-20 mb-1 rounded-[6px] text-white font-medium"
+              class="button"
               (click)="onDel(student.id)"
               (click)="refresh()"
             >
-              Delete
+              Xóa
             </button>
           </th>
         </tr>
       </tbody>
       }
     </table>
-
-    <table>
+  </div>
+</div>
+  <div class="">
+    <h1 class="font-bold text-4xl"> Danh sách danh mục</h1>
+    <table  class="bg-orange-50 table-auto border  my-2 text-center ">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Category</th>
-          <th>Action</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">ID</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">Category</th>
+          <th class=" p-5 border-2 border-red-100 text-xl ... ">Action</th>
         </tr>
       </thead>
       @for(category of categoryData; track category){
       <tbody>
         <tr>
-          <td>{{ category.id }}</td>
-          <td>{{ category.title }}</td>
-          <td>
+          <td class=" p-5 border-2 border-red-100 text-xl ... ">{{ category.id }}</td>
+          <td class=" p-5 border-2 border-red-100 text-xl ... ">{{ category.title }}</td>
+          <td class=" p-5 border-2 border-red-100 text-xl ... ">
             <a href="admin/categories/{{ category.id }}">
               <button
-                class="bg-blue-600 w-20 mb-2 mt-1 rounded-[6px] text-white font-medium"
+                class="button"
               >
-                Edit
+                Sửa
               </button>
             </a>
             <button
-              class="bg-red-500 w-20 mb-1 rounded-[6px] text-white font-medium"
+              class="button"
               (click)="onDelCate(category.id)"
               (click)="refresh()"
             >
-              Delete
+              Xóa
             </button>
           </td>
         </tr>
@@ -88,6 +85,7 @@
   </div>
 </div>
 
+
 <button
   (click)="removeToken()"
   type="button"
@@ -95,6 +93,16 @@
 >
   Log out
 </button>
+<a href="admin/add"
+  ><button class="button">
+    Thêm sản phẩm
+  </button></a
+>
+<a href="admin/categories"
+  ><button class="button">
+    Thêm danh mục
+  </button></a
+>
 <!-- <button class="" (click)="removeToken()">Log out</button> -->
-<router-outlet></router-outlet>
+<router-outlet></router-outlet><br><br><br><br><br>
 <app-footer></app-footer>

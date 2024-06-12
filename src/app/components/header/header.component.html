@@ -18,6 +18,7 @@
         >
           <div class="relative">Need help? Call us: (+98) 0234 456 789</div>
           <a href="admin">Admin</a>
+
           <div
             class="flex flex-row items-center justify-center gap-[36px] mq450:gap-[18px]"
           >
@@ -61,16 +62,18 @@
             class="self-stretch bg-white flex-1 rounded-xl flex flex-row items-center justify-start py-0 pr-0 pl-[25px] box-border relative gap-[10px] max-w-full"
           >
             <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
-              <input
-                class="h-[90%] w-[270px] rounded-md focus:outline-none"
-                type="text"
-                placeholder="Search any things"
-                formControlName="keywords"
-              />
-
+              <div
+                class="relative inline-block min-w-[127px] whitespace-nowrap"
+              >
+                <input
+                  type="text"
+                  placeholder="Serach any things"
+                  formControlName="keywords"
+                />
+              </div>
               <button
-                class="cursor-pointer [border:none] py-[17.5px] px-[41px] bg-b !m-[0] absolute top-[0px] left-[306px] rounded-xl flex flex-row items-center justify-center hover:bg-darkgoldenrod"
                 type="submit"
+                class="bg-[#EDA415] cursor-pointer [border:none] py-[17.5px] px-[41px]  !m-[0] absolute top-[0px] left-[306px] rounded-xl flex flex-row items-center justify-center hover:bg-darkgoldenrod"
               >
                 <div
                   class="relative text-sm font-semibold font-poppins text-white text-left inline-block min-w-[50px]"

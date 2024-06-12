@@ -1,8 +1,8 @@
-<h1 class="font-bold text-4xl">Add</h1>
+<h1 class="font-bold text-4xl">Thêm sản phẩm</h1>
 <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
   <div>
     <input
-      class="border-2 border-blue-500 rounded-[5px] mb-2 focus:outline-none"
+      class="pl"
       type="text"
       placeholder="Title"
       formControlName="title"
@@ -27,7 +27,7 @@
   </div>
   <div>
     <input
-      class="border-2 border-blue-500 rounded-[5px] mb-2 focus:outline-none"
+      class="pl"
       type="number"
       placeholder="price"
       formControlName="price"
@@ -47,7 +47,7 @@
   </div>
   <div>
     <input
-      class="border-2 border-blue-500 rounded-[5px] mb-2 focus:outline-none"
+      class="pl"
       type="text"
       placeholder="Description"
       formControlName="description"
@@ -67,7 +67,7 @@
   </div>
   <div>
     <input
-      class="border-2 border-blue-500 rounded-[5px] mb-2 focus:outline-none"
+      class="pl"
       type="text"
       placeholder="IMG"
       formControlName="img"
@@ -82,11 +82,11 @@
   </div>
 
   <button
-    class="bg-blue-600 w-[184px] h-9 rounded-[6px] text-white font-medium"
+    class="button"
     (click)="refresh()"
     [disabled]="productForm.invalid"
     type="submit"
   >
-    Submit
+    Thêm
   </button>
 </form>

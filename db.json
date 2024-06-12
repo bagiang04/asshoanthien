@@ -1,91 +1,44 @@
 {
   "product": [
     {
-      "title": "Iphone 6",
-      "price": 100,
-      "description": "mota ",
-      "category": "Iphone",
-      "id": 1
-    },
-    {
-      "title": "Iphone 8",
-      "price": 150,
-      "description": "mota1",
-      "category": "Iphone",
-      "id": 2
-    },
-    {
-      "title": "Redmi note 13",
-      "price": 1000,
-      "description": "mota2",
-      "category": "Redmi",
-      "img": "https://cdn2.cellphones.com.vn/x/media/catalog/product/x/i/xiaomi-redmi-note-13_7__1_3.png",
-      "id": 3
-    },
-    {
-      "title": "Sony vip pro",
-      "price": 1002,
-      "description": "motaa",
-      "category": "Sony",
-      "id": 4
-    },
-    {
-      "title": "Redmi note 13",
-      "price": 100,
-      "description": "redmi",
-      "category": "Redmi",
-      "img": "",
-      "id": 5
-    },
-    {
-      "title": "sdasddsa",
-      "price": 123,
-      "description": "dasdasd",
-      "category": "Xiaomi",
-      "img": "",
-      "id": 6
-    },
-    {
-      "title": "adsbdkjasd",
-      "price": 12367,
-      "description": "aldhflasdjf",
-      "category": "Redmi",
-      "img": "https://cdn2.cellphones.com.vn/x/media/catalog/product/x/i/xiaomi-redmi-note-13_7__1_3.png",
-      "id": 7
-    },
-    {
-      "title": "vzxcvzcxv",
-      "price": 123123,
-      "description": "afsdfadsfadf",
+      "title": "iphone 11 promax",
+      "price": 120,
+      "description": "xịn",
       "category": "1",
-      "img": "adfadf",
-      "id": 8
+      "img": "https://th.bing.com/th?id=OIP.lDhV_7f-3vLRUAC7lXCsWgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      "id": 10
+    },
+    {
+      "title": "dog gy",
+      "price": 120,
+      "description": "đẹp",
+      "category": "3",
+      "img": "https://th.bing.com/th?id=OSK.mmcolxv425W_yXaG19I2WgJ9XoWs6AC5TxRhImQvn7Ls2OAs&w=200&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM",
+      "id": 11
+    },
+    {
+      "title": "iphone 12 promax",
+      "price": 150,
+      "description": "đẹp",
+      "category": "1",
+      "img": "https://th.bing.com/th/id/OIP.PSd6wxGdQ7mv_KlVXQlb2AHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "id": 13
+    },
+    {
+      "title": "sam sung galaxy",
+      "price": 12,
+      "description": "đẹp",
+      "category": "2",
+      "img": "data:image/jpeg;base64,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",
+      "id": 14
     }
   ],
   "users": [
     {
-      "email": "sucvat3344@gmail.com",
-      "password": "$2a$10$GjB8cuXVG/Q5Dw7pyoFSn.uP6fl4qYBGlh6DTf9FJcgaZ0Sqwx7G6",
-      "name": "sdasdasd",
+      "email": "binz@gmail.com",
+      "password": "$2a$10$063jy4TJfaKuoQYG/WnzF.LNxTg2ElCtLFznHxnDbbHre2i8rr2Z2",
+      "name": "nguyenbagiang",
       "id": 1
-    },
-    {
-      "email": "sucvat3355@gmail.com",
-      "password": "$2a$10$L0leZH2thGuyDak7qshuaumz19CJYzYRfJxADvs7Y.chbzH1HKL5i",
-      "name": "dasdasd",
-      "id": 2
-    },
-    {
-      "email": "sucvat3366@gmail.com",
-      "password": "$2a$10$D0iKn8CtS0Yg.4ViXZhwS.vCBG0KPGrgwQ7jz9G.h2SJxYrY0sjMy",
-      "name": "hasjdf",
-      "id": 3
-    },
-    {
-      "email": "sucvat3388@gmail.com",
-      "password": "$2a$10$5ZieOVuA87K2aFo3p8E8fuKwO4POMNN4AZ/ka1j.kikETUAB6k9CS",
-      "name": "jhvkzh",
-      "id": 4
     }
   ],
   "categories": [
@@ -98,36 +51,8 @@
       "id": 2
     },
     {
-      "title": "Xiaomi",
+      "title": "dog",
       "id": 3
-    },
-    {
-      "title": "Sony",
-      "id": 5
-    },
-    {
-      "title": "Redmi",
-      "id": 6
-    },
-    {
-      "title": "Bphone",
-      "id": 7
-    },
-    {
-      "title": "Google",
-      "id": 8
-    },
-    {
-      "title": "jkfsda",
-      "id": 9
-    },
-    {
-      "title": "adfadf",
-      "id": 10
-    },
-    {
-      "title": "gsfdgsfdg",
-      "id": 11
     }
   ]
 }

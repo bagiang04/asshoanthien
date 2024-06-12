@@ -11,6 +11,7 @@ import axios from 'axios';
 export class DasboardComponent {
   productData: any;
   categoryData: any;
+  searchText: any;
   url: string = 'http://localhost:3000/product';
   constructor(private http: HttpClient) {}
   async ngOnInit() {
